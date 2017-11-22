@@ -149,7 +149,7 @@ class CNetwork(object):
 
         print 'haberr: ' , len(all_edges) , len(network.get_edgelist())
 
-        embeddings = ['d2v' , 'gd2v', 'fastT', 'gloVe']
+        embeddings = ['d2v' , 'gd2v', 'fastT', 'gloVe', 's2v']
         #if self.network_type=='d2v' or self.network_type=='gd2v':
         if self.network_type in embeddings:
             networks = []
@@ -486,7 +486,7 @@ class CNetwork(object):
 
 
     def generate(self):
-        embeddings = ['tfidf' ,'d2v', 'gd2v', 'fastT', 'gloVe']
+        embeddings = ['tfidf' ,'d2v', 'gd2v', 'fastT', 'gloVe', 's2v']
         if self.network_type == 'noun':
             return self.noun_based_network()
         #if self.network_type == 'tfidf' or self.network_type == 'd2v' or self.network_type == 'gd2v':

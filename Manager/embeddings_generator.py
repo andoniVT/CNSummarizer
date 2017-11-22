@@ -4,7 +4,7 @@ from gensim.models.doc2vec import LabeledSentence
 from random import shuffle
 from scipy import spatial
 from utils import permutate_data , load_data_from_disk, get_w2v_vector, save_sentences, save_sentences_v2 ,get_fast_test_vector, get_fast_test_vector_v2
-from utils import save_processed_sentences, save_processed_sentences_v2
+from utils import save_processed_sentences, save_processed_sentences_v2, get_fast_test_vector_s2v
 from configuration import extras, some_parameters
 import os
 import fasttext
@@ -332,18 +332,37 @@ class Sent2Vec(object):
         self.generate_train_command = './fasttext2 sent2vec -input ' + some_parameters['train_file_v2'] + ' -output ' + some_parameters['model_v2']
         print self.generate_train_command
 
-        #command = './fasttext2 sent2vec -input ' + some_parameters['train_file_v2'] + ' -output ' + some_parameters['model_v2']
-        #print command
 
     def train(self):
         print 'training ...'
-        #os.system(self.generate_train_command) ##########################################################################################
+        os.system(self.generate_train_command) ##########################################################################################
 
     def get_matrix_sent2vec(self):
-        print 'aaaaaaaaaa'
-        return ''
+        corpus_matrix = dict()
+        allSentences = []
+        for i in self.corpus.items():
+            doc_sentences = i[1][0]
+            allSentences.extend(doc_sentences)
+
+        if self.proccessing: # use preprocesed
+            save_processed_sentences_v2(some_parameters['test_file_v2'], allSentences, self.auxiliar_sentence_list)
+        else: # use original
+            save_sentences_v2(some_parameters['test_file_v2'], allSentences)  ###################
 
 
+        vectors_dictionary = get_fast_test_vector_s2v(allSentences, some_parameters['test_file_v2'])  ############
+
+
+        for i in self.corpus.items():
+            doc_name = i[0]
+            doc_sentences = i[1][0]
+            doc_matrix = []
+            for j in doc_sentences:
+                vector = vectors_dictionary[j]
+                doc_matrix.append(vector)
+            corpus_matrix[doc_name] = doc_matrix
+
+        return corpus_matrix
 
 
 class Glove(object):

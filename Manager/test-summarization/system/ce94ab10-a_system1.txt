@@ -1,9 +1,8 @@
-E conhecido o fenomeno de "ruido na comunicacao": a informacao se enfraquece e deforma quanto maior o numero de transmissores e receptores intermediarios.
-O fluxo da decisao e a cadeia cliente-fornecedor devem estar alinhados aos valores que o cliente preza: cortesia, presteza, eficiencia, receptividade e personalizacao.
-A maioria das empresas possui estruturas tradicionais de comando, onde o cliente relaciona-se com as pessoas que tem menor poder de decisao.
-Existe uma distancia enorme entre os que detem o poder (a direcao superior) e o cliente.
-Ai, as pessoas mais importantes na organizacao passam a ser as de atendimento e vendas.
-E preciso inverter a estrutura, colocando o cliente como a pessoa mais importante da organizacao.
-A perda de competitividade e a consequencia mais direta da falta de agilidade nas decisoes, perda de informacoes, aumento da burocracia interna, pois, nos "momentos da verdade", o funcionario precisa tomar decisoes que implicam, muitas vezes, questoes vitais para o cliente.
-E dificil encontrar o responsavel, quando a empresa nao e direcionada a satisfacao total dos clientes.
 Nas estruturas tradicionais de empresas, onde o mando predomina sobre a responsabilidade individual, nao e possivel sequer aprender em cima dos proprios erros.
+A maioria das empresas possui estruturas tradicionais de comando, onde o cliente relaciona-se com as pessoas que tem menor poder de decisao.
+Os acontecimentos mais importantes nao sao as reunioes de chefia, mas os momentos em que a empresa tem contato direto com o cliente, os "momentos da verdade".
+A perda de competitividade e a consequencia mais direta da falta de agilidade nas decisoes, perda de informacoes, aumento da burocracia interna, pois, nos "momentos da verdade", o funcionario precisa tomar decisoes que implicam, muitas vezes, questoes vitais para o cliente.
+E conhecido o fenomeno de "ruido na comunicacao": a informacao se enfraquece e deforma quanto maior o numero de transmissores e receptores intermediarios.
+Vai exigir mudancas para as quais existem duas palavras-chave: delegacao e cooperacao; disseminacao das informacoes.
+A empresa toda e um macroprocesso, uma equipe unica voltada para o objetivo comum de atingir altos niveis de produtividade, com a manutencao e a conquista de novos clientes.
+3 DISSEMINACAO DE INFORMACOES O fluxo de informacoes que parte do cliente (pedidos, avaliacoes, reclamacoes, expectativas) passa pelos diferentes departamentos da empresa e deve retornar como resposta e solucao, de maneira agil, ao cliente.

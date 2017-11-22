@@ -122,21 +122,17 @@ class Summarizer(object):
         '''
         4. Network creation
         5. Network prunning 
-        
+        '''
 
         obj = NetworkManager(network_type, mln_type, processed_corpus, vectorized_corpus, inter_edge_mln, limiar_mln, limiar_value, limiar_type)
         complex_networks = obj.create_networks()
-        '''
-
-        #for i in complex_networks.items():
-        #    print i
-
 
 
 
         '''
         6. Node weighting  7. Node ranking
         6. Node weighting 7. Machine Learning
+        '''
         
 
         manageNodes = NodeManager(complex_networks, network_measures)
@@ -149,7 +145,7 @@ class Summarizer(object):
         else:
             all_documentRankings = manageNodes.ranking()
 
-        '''
+
 
         #for i in all_documentRankings.items():
         #    print i
@@ -159,11 +155,12 @@ class Summarizer(object):
 
         '''
         8. Summarization
+        '''
         
         
         obj = SummaryGenerator(processed_corpus, complex_networks, all_documentRankings,anti_redundancy_method)
         obj.generate_summaries()
-        '''
+
 
 
 
@@ -171,7 +168,7 @@ class Summarizer(object):
 
         '''
          9. Validation
-        
+        '''
         
         key = choice(all_documentRankings.keys())
         number_of_measures = len(all_documentRankings[key][0])
@@ -201,7 +198,7 @@ class Summarizer(object):
         
         deleteFolders(extras['Automatics'])
              
-        '''
+
 
 
 

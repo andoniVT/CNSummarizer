@@ -1,7 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d1670ea-0095-471a-9959-e5c303d54b2c" name="Default" comment="" />
+    <list default="true" id="3d1670ea-0095-471a-9959-e5c303d54b2c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/embeddings_generator.py" afterPath="$PROJECT_DIR$/Manager/embeddings_generator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/main2.py" afterPath="$PROJECT_DIR$/Manager/main2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/network.py" afterPath="$PROJECT_DIR$/Manager/network.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/results.csv" afterPath="$PROJECT_DIR$/Manager/results.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/ce94ab10-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/ce94ab10-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/ce94ab17-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/ce94ab17-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/ce94ab24-c_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/ce94ab24-c_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/ce94ab24-e_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/ce94ab24-e_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/ce94ab24-f_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/ce94ab24-f_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/ce94ja21-d_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/ce94ja21-d_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/ce94ja21-e_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/ce94ja21-e_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/ce94ja21-f_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/ce94ja21-f_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/ce94ja25-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/ce94ja25-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/ce94ja25-b_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/ce94ja25-b_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/ce94ja8-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/ce94ja8-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/ce94jl10-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/ce94jl10-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/ce94jl11-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/ce94jl11-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/ce94jl11-b_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/ce94jl11-b_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/ce94jl11-c_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/ce94jl11-c_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/ce94jl31-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/ce94jl31-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/ce94jl31-b_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/ce94jl31-b_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/ce94jl31-c_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/ce94jl31-c_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/ce94jl31-d_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/ce94jl31-d_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/ce94jl31-e_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/ce94jl31-e_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/in96ab09-b_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/in96ab09-b_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/in96ab18-b_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/in96ab18-b_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/in96ab19-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/in96ab19-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/in96ab25-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/in96ab25-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/in96ab26-b_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/in96ab26-b_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/in96ab30-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/in96ab30-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/in96fe08-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/in96fe08-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/in96fe13-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/in96fe13-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/in96fe14-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/in96fe14-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/in96fe15-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/in96fe15-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/in96fe26-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/in96fe26-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/in96fe26-b_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/in96fe26-b_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/in96fe29-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/in96fe29-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/in96fe29-b_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/in96fe29-b_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/in96jl01-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/in96jl01-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/in96jl02-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/in96jl02-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/in96ju10-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/in96ju10-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/in96ju13-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/in96ju13-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/in96ju18-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/in96ju18-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/in96ju19-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/in96ju19-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/mu94ab02-b_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/mu94ab02-b_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/mu94ab03-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/mu94ab03-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/mu94ab04-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/mu94ab04-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/mu94ab09-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/mu94ab09-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/mu94ag06-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/mu94ag06-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/mu94ag07-b_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/mu94ag07-b_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/mu94ag09-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/mu94ag09-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/mu94ag16-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/mu94ag16-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de02-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de02-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de04-b_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de04-b_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de04-c_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de04-c_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de04-d_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de04-d_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de05-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de05-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de07-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de07-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de09-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de09-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de11-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de11-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de14-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de14-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de21-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de21-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de22-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de22-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de27-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/mu94de27-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/op94ab01-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/op94ab01-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/op94ab01-b_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/op94ab01-b_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/op94ab02-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/op94ab02-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/op94ab03-b_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/op94ab03-b_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/op94ab04-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/op94ab04-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/op94ab06-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/op94ab06-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/op94ab10-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/op94ab10-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/op94ab18-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/op94ab18-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/op94ab21-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/op94ab21-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/op94ab24-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/op94ab24-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/op94ab26-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/op94ab26-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/op94ag07-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/op94ag07-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/op94ag07-b_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/op94ag07-b_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/op94ag07-c_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/op94ag07-c_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/op94ag09-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/op94ag09-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/op94ag10-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/op94ag10-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/op94ag14-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/op94ag14-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/op94ag14-b_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/op94ag14-b_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/op94ag21-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/op94ag21-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/op94ag24-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/op94ag24-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/po96ab09-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/po96ab09-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/po96ab09-c_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/po96ab09-c_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/po96ab19-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/po96ab19-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/po96ab19-b_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/po96ab19-b_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/po96fe07-b_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/po96fe07-b_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/po96fe09-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/po96fe09-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/po96fe09-b_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/po96fe09-b_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/po96fe13-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/po96fe13-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/po96fe14-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/po96fe14-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/po96fe14-b_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/po96fe14-b_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/po96fe14-c_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/po96fe14-c_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/po96fe14-d_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/po96fe14-d_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/po96fe15-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/po96fe15-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/po96fe26-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/po96fe26-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/po96fe28-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/po96fe28-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/po96jl01-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/po96jl01-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/po96jl01-b_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/po96jl01-b_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/po96jl02-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/po96jl02-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/po96ju10-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/po96ju10-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/test-summarization/system/po96ju13-a_system1.txt" afterPath="$PROJECT_DIR$/Manager/test-summarization/system/po96ju13-a_system1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/utils.py" afterPath="$PROJECT_DIR$/Manager/utils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Results/test2.csv" afterPath="$PROJECT_DIR$/Results/test2.csv" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +122,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main2.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Manager/main2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="128" column="11" lean-forward="false" selection-start-line="128" selection-start-column="11" selection-end-line="128" selection-end-column="11" />
+            <state relative-caret-position="-903">
+              <caret line="170" column="11" lean-forward="false" selection-start-line="170" selection-start-column="11" selection-end-line="170" selection-end-column="11" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -60,11 +168,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="embeddings_generator.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="embeddings_generator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Manager/embeddings_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="343" column="17" lean-forward="true" selection-start-line="343" selection-start-column="17" selection-end-line="343" selection-end-column="17" />
+            <state relative-caret-position="226">
+              <caret line="334" column="0" lean-forward="false" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
               </folding>
@@ -85,8 +193,8 @@
       <file leaf-file-name="network.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Manager/network.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="198">
+              <caret line="488" column="68" lean-forward="false" selection-start-line="488" selection-start-column="68" selection-end-line="488" selection-end-column="68" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -97,8 +205,8 @@
       <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Manager/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="1137" column="57" lean-forward="false" selection-start-line="1137" selection-start-column="48" selection-end-line="1137" selection-end-column="57" />
+            <state relative-caret-position="190">
+              <caret line="206" column="55" lean-forward="false" selection-start-line="206" selection-start-column="55" selection-end-line="206" selection-end-column="55" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -144,10 +252,10 @@
         <option value="$PROJECT_DIR$/Manager/testing2.py" />
         <option value="$PROJECT_DIR$/Manager/corpus_loader.py" />
         <option value="$PROJECT_DIR$/Manager/machine_learning_ranking.py" />
-        <option value="$PROJECT_DIR$/Manager/utils.py" />
-        <option value="$PROJECT_DIR$/Manager/network.py" />
         <option value="$PROJECT_DIR$/Manager/configuration.py" />
         <option value="$PROJECT_DIR$/Manager/embeddings_generator.py" />
+        <option value="$PROJECT_DIR$/Manager/utils.py" />
+        <option value="$PROJECT_DIR$/Manager/network.py" />
         <option value="$PROJECT_DIR$/Manager/main2.py" />
       </list>
     </option>
@@ -440,7 +548,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12811127" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43171114" sideWeight="0.5058565" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34823528" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.53882354" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -784,16 +892,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Manager/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1137" column="57" lean-forward="false" selection-start-line="1137" selection-start-column="48" selection-end-line="1137" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Manager/configuration.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="417">
@@ -802,10 +900,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Manager/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="206" column="55" lean-forward="false" selection-start-line="206" selection-start-column="55" selection-end-line="206" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Manager/embeddings_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="334" column="0" lean-forward="false" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Manager/network.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="198">
+          <caret line="488" column="68" lean-forward="false" selection-start-line="488" selection-start-column="68" selection-end-line="488" selection-end-column="68" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -814,20 +932,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Manager/main2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="128" column="11" lean-forward="false" selection-start-line="128" selection-start-column="11" selection-end-line="128" selection-end-column="11" />
+        <state relative-caret-position="-903">
+          <caret line="170" column="11" lean-forward="false" selection-start-line="170" selection-start-column="11" selection-end-line="170" selection-end-column="11" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Manager/embeddings_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="343" column="17" lean-forward="true" selection-start-line="343" selection-start-column="17" selection-end-line="343" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>

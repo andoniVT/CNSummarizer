@@ -204,7 +204,7 @@ def cosineSimilarity(sentence1, sentence2):
 
 #def calculate_similarity(vec_sentence1 , vec_sentence2, network_type, distance_method):
 def calculate_similarity(vec_sentence1 , vec_sentence2, network_type):
-    embeddings = ['d2v', 'gd2v', 'fastT', 'gloVe']
+    embeddings = ['d2v', 'gd2v', 'fastT', 'gloVe', 's2v']
     if network_type=='tfidf':
         return matutils.cossim(vec_sentence1, vec_sentence2)
     #if network_type=='d2v' or network_type=='gd2v':
@@ -1154,6 +1154,24 @@ def get_fast_test_vector(sentences, pSentences, test_file):
         vector_dictionary[sentence] = vector
 
     return vector_dictionary
+
+def get_fast_test_vector_s2v(sentences, test_file):
+    command = './fasttext2 print-sentence-vectors ' + some_parameters['model_v2'] + '.bin < ' + test_file
+    p = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+    output, error = p.communicate()
+
+    lines = output.split('\n')
+    lines.pop()
+
+    vector_dictionary = dict()
+    for index, line in enumerate(lines):
+        sentence = sentences[index]
+        data = line.split()
+        vector = map(float, data)
+        vector_dictionary[sentence] = vector
+    return vector_dictionary
+
+
 
 
 def get_fast_test_vector_v2(model, sentence):
