@@ -99,7 +99,7 @@ class Summarizer(object):
 
 
             if language == 'eng':
-                obj = Vectorization(processed_corpus, network_type_subtype, size_d2v)
+                obj = Vectorization(processed_corpus, network_type_subtype, size_d2v, language=language)
                 vectorized_corpus = obj.calculate()
             else:
                 type_summary_inverted = 0
@@ -113,7 +113,7 @@ class Summarizer(object):
                 obj = CorpusConversion(auxiliar_corpus, language, network_type, mln_type, sw_removal)
                 processed_auxiliar = obj.convert()
 
-                obj = Vectorization(processed_corpus, network_type_subtype, size_d2v, processed_auxiliar)
+                obj = Vectorization(processed_corpus, network_type_subtype, size_d2v, processed_auxiliar, language=language)
                 vectorized_corpus = obj.calculate()
 
 
@@ -230,8 +230,8 @@ class Summarizer(object):
 
         #dictionary['network'] = ('noun', [])
         #dictionary['network'] = ('tfidf', [])
-        #dictionary['network'] = ('fastT' , [('limiar', [0.10, 0.15, 0.20, 0.25, 0.3])])
-        dictionary['network'] = ('s2v', [('limiar', [0.10, 0.15, 0.20])])
+        dictionary['network'] = ('fastT' , [('limiar', [0.10, 0.15, 0.20, 0.25, 0.3])])
+        #dictionary['network'] = ('s2v', [('limiar', [0.10, 0.15, 0.20, 0.25, 0.3])])
         #dictionary['network'] = ('gloVe', [('limiar', [0.10, 0.15, 0.20])])
         #dictionary['network'] = ('d2v', [False, ('limiar', [0.10, 0.15, 0.20, 0.25, 0.3]), 300])
         #dictionary['network'] = ('gd2v', [('limiar', [0.10, 0.15, 0.20, 0.25, 0.3])])
@@ -242,7 +242,7 @@ class Summarizer(object):
         # dictionary['network'] = ('mln', ['noun', [1.1, 1.3, 1.5], [0.1, 0.15, 0.20]])
 
 
-        dictionary['measures'] = ['dg' , 'pr']
+        dictionary['measures'] = ['dg' , 'pr', 'gaccs']
         # dictionary['measures'] = ['at' , 'gaccs']
         #dictionary['measures'] = ['*']
         #dictionary['measures'] = ['gaccs']

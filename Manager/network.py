@@ -124,7 +124,7 @@ class CNetwork(object):
         for i in all_edges:
             index1 = i[0]
             index2 = i[1]
-            similarity = calculate_similarity_v2(document_vectors[index1], document_vectors[index2], self.network_type)
+            similarity = calculate_similarity(document_vectors[index1], document_vectors[index2], self.network_type)
             #print similarity ,
 
 

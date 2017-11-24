@@ -12,18 +12,18 @@ import fasttext
 class Vectorization(object):
 
     #def __init__(self, corpus, vectorization_type, use_inference=None, vector_size=None, auxiliar_corpus=None):
-    def __init__(self, corpus, vectorization_type, vector_size=None, auxiliar_corpus=None):
+    def __init__(self, corpus, vectorization_type, vector_size=None, auxiliar_corpus=None, language='ptg'):
         self.corpus = corpus
         self.vectorization_type = vectorization_type
         #self.use_inference = use_inference
         self.vector_size = vector_size
         self.auxiliar_corpus = auxiliar_corpus
+        self.language = language
 
     def tf_idf_vectorization(self):
         obj = TfIdfModel(self.corpus, self.auxiliar_corpus)
         obj.train()
         return obj.get_matrix_tfidf()
-
 
     def d2v_vectorization(self):
         #obj = Doc2VecModel(self.corpus, self.use_inference, self.vector_size, self.auxiliar_corpus)
@@ -38,13 +38,13 @@ class Vectorization(object):
 
     def fast_text_vectorization(self):
         print 'fast text vectorization!'
-        obj = FastText(self.corpus, self.auxiliar_corpus)
+        obj = FastText(self.corpus, self.auxiliar_corpus, language=self.language)
         obj.train()
         return obj.get_matrix_fast_text()
 
     def sent2vec_vectorization(self):
         print 'sent2vec vectorization!'
-        obj = Sent2Vec(self.corpus, self.auxiliar_corpus)
+        obj = Sent2Vec(self.corpus, self.auxiliar_corpus, language=self.language)
         obj.train()
         return obj.get_matrix_sent2vec()
 
@@ -209,12 +209,15 @@ class Doc2VecModelGoogleNews(object):
 
 class FastText(object):
 
-    def __init__(self, corpus, auxiliar=None, type='skipgram', use_proccessing=False): # type='cbow' \ 'skipgram'    proccessing: true->utilizar la parte preprocesada  false-> usar las sentencias originales
+    # type='cbow' \ 'skipgram'    proccessing: true->utilizar la parte preprocesada  false-> usar las sentencias originales
+    def __init__(self, corpus, auxiliar=None, type='skipgram', use_proccessing=False, use_pre_trained=True, language='ptg'):
         self.corpus = corpus
         self.auxiliar = auxiliar
         self.type = type
         self.proccessing = use_proccessing
         self.auxiliar_sentence_list = None
+        self.use_pre_trained_vectors = use_pre_trained
+        self.language = language
 
         allSentences = []
         pAllSentences = []
@@ -248,7 +251,10 @@ class FastText(object):
 
     def train(self):
         print 'training ...'
-        os.system(self.generate_train_command)
+        if self.use_pre_trained_vectors:
+            pass
+        else:
+            os.system(self.generate_train_command)
 
 
     def get_matrix_fast_text(self):
@@ -266,7 +272,7 @@ class FastText(object):
             pSentences = save_sentences_v2(some_parameters['test_file'], allSentences)  ###################
 
 
-        vectors_dictionary = get_fast_test_vector(allSentences, pSentences, some_parameters['test_file'])  ############
+        vectors_dictionary = get_fast_test_vector(allSentences, pSentences, some_parameters['test_file'], use_pre_trained=self.use_pre_trained_vectors, language=self.language)  ############
 
         for i in self.corpus.items():
             doc_name = i[0]
@@ -299,11 +305,13 @@ class FastText(object):
 
 class Sent2Vec(object):
 
-    def __init__(self, corpus, auxiliar=None, use_proccessing=False):
+    def __init__(self, corpus, auxiliar=None, use_proccessing=False, use_pre_trained=False, language='ptg'):
         self.corpus = corpus
         self.auxiliar = auxiliar
         self.proccessing = use_proccessing
         self.auxiliar_sentence_list = None
+        self.use_pre_trained_vectors = use_pre_trained
+        self.language = language
 
         allSentences = []
         pAllSentences = []
@@ -335,7 +343,10 @@ class Sent2Vec(object):
 
     def train(self):
         print 'training ...'
-        os.system(self.generate_train_command) ##########################################################################################
+        if self.use_pre_trained_vectors:
+            pass
+        else:
+            os.system(self.generate_train_command) ##########################################################################################
 
     def get_matrix_sent2vec(self):
         corpus_matrix = dict()

@@ -90,3 +90,6 @@ some_parameters['train_file_v2'] = '../Extras/input_ft_train_file2.txt'
 some_parameters['test_file_v2'] = '../Extras/input_ft_test_file2.txt'
 some_parameters['vectors_file_v2'] = '../Extras/input_ft_vectors_file2.txt'
 some_parameters['model_v2'] = '../../model2'
+
+some_parameters['ptg_wiki_ft_vec'] = '../../wiki.pt.bin'
+some_parameters['eng_wiki_ft_vec'] = '../../wiki.en.bin'

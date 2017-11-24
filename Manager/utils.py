@@ -1119,11 +1119,6 @@ def save_processed_sentences_v2(input_file, allSentences, dictionary_sentence_li
     return pSentences
 
 
-
-
-
-
-
 '''
 def get_fast_test_vector(command, position):
     p = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
@@ -1133,10 +1128,15 @@ def get_fast_test_vector(command, position):
     return map(float, data)
 '''
 
-
-
-def get_fast_test_vector(sentences, pSentences, test_file):
-    command = './fasttext print-sentence-vectors model.bin < ' + test_file
+def get_fast_test_vector(sentences, pSentences, test_file, use_pre_trained=False, language='ptg'):
+    #command = './fasttext print-sentence-vectors model.bin < ' + test_file
+    if use_pre_trained:
+        if language=='ptg':
+            command = './fasttext print-sentence-vectors ' + some_parameters['ptg_wiki_ft_vec'] + ' < ' + test_file
+        else:
+            command = './fasttext print-sentence-vectors ' + some_parameters['eng_wiki_ft_vec'] + ' < ' + test_file
+    else:
+        command = './fasttext print-sentence-vectors ' + some_parameters['model'] + '.bin < '  + test_file
 
     p = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     output, error = p.communicate()
@@ -1155,8 +1155,16 @@ def get_fast_test_vector(sentences, pSentences, test_file):
 
     return vector_dictionary
 
-def get_fast_test_vector_s2v(sentences, test_file):
-    command = './fasttext2 print-sentence-vectors ' + some_parameters['model_v2'] + '.bin < ' + test_file
+def get_fast_test_vector_s2v(sentences, test_file, use_pre_trained=False, language='ptg'):
+
+    if use_pre_trained:
+        if language=='ptg':
+            command = './fasttext2 print-sentence-vectors ' + some_parameters['ptg_wiki_ft_vec'] + ' < ' + test_file
+        else:
+            command = './fasttext2 print-sentence-vectors ' + some_parameters['eng_wiki_ft_vec'] + ' < ' + test_file
+    else:
+        command = './fasttext2 print-sentence-vectors ' + some_parameters['model_v2'] + '.bin < ' + test_file
+
     p = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     output, error = p.communicate()
 
@@ -1169,9 +1177,8 @@ def get_fast_test_vector_s2v(sentences, test_file):
         data = line.split()
         vector = map(float, data)
         vector_dictionary[sentence] = vector
+
     return vector_dictionary
-
-
 
 
 def get_fast_test_vector_v2(model, sentence):
