@@ -207,8 +207,8 @@ class Summarizer(object):
 
     def parse_file(self, doc):
         dictionary = dict()
-        dictionary['language'] = 'ptg'
-        #dictionary['language'] = 'eng'
+        #dictionary['language'] = 'ptg'
+        dictionary['language'] = 'eng'
         dictionary['type'] = ('SDS' , None)
         #dictionary['type'] = ('MDS', 1)  # 0->sin antiredundancia, 1->metodo de ribaldo 2->metodo de ngrams  3-> maximum marginal relevance
         dictionary['corpus'] = 0  # 1  para DUC2004 en caso del ingles, solo para MDS

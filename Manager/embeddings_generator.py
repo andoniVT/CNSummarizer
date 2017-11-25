@@ -210,7 +210,7 @@ class Doc2VecModelGoogleNews(object):
 class FastText(object):
 
     # type='cbow' \ 'skipgram'    proccessing: true->utilizar la parte preprocesada  false-> usar las sentencias originales
-    def __init__(self, corpus, auxiliar=None, type='skipgram', use_proccessing=False, use_pre_trained=True, language='ptg'):
+    def __init__(self, corpus, auxiliar=None, type='skipgram', use_proccessing=False, use_pre_trained=False, language='ptg'):
         self.corpus = corpus
         self.auxiliar = auxiliar
         self.type = type

@@ -1,0 +1,4 @@
+One of the two antennas apparently had swung too far, and the telescope shut down, said Jean Oliver, a Hubble deputy project manager.
+Terry said Hubble is designed with safe modes so it can be the master of its own destiny in case contact with an orbiting communications system is lost for extended periods.
+Terry said the opening of the aperture door could not have been delayed much longer.
+Ground controllers sent a signal commanding the door to lift even though the telescope was in an automatic safe mode, with all motion stopped because of problems in linking its high-speed dish antennas with a relay satellite.
