@@ -122,17 +122,18 @@ class Summarizer(object):
         '''
         4. Network creation
         5. Network prunning 
-        '''
+        
 
         obj = NetworkManager(network_type, mln_type, processed_corpus, vectorized_corpus, inter_edge_mln, limiar_mln, limiar_value, limiar_type)
         complex_networks = obj.create_networks()
+        '''
 
 
 
         '''
         6. Node weighting  7. Node ranking
         6. Node weighting 7. Machine Learning
-        '''
+        
         
 
         manageNodes = NodeManager(complex_networks, network_measures)
@@ -145,6 +146,8 @@ class Summarizer(object):
         else:
             all_documentRankings = manageNodes.ranking()
 
+        '''
+
 
 
         #for i in all_documentRankings.items():
@@ -155,11 +158,12 @@ class Summarizer(object):
 
         '''
         8. Summarization
-        '''
+        
         
         
         obj = SummaryGenerator(processed_corpus, complex_networks, all_documentRankings,anti_redundancy_method)
         obj.generate_summaries()
+        '''
 
 
 
@@ -168,7 +172,7 @@ class Summarizer(object):
 
         '''
          9. Validation
-        '''
+        
         
         key = choice(all_documentRankings.keys())
         number_of_measures = len(all_documentRankings[key][0])
@@ -197,6 +201,7 @@ class Summarizer(object):
         obj.validate('results.csv')
         
         deleteFolders(extras['Automatics'])
+        '''
              
 
 
@@ -207,8 +212,8 @@ class Summarizer(object):
 
     def parse_file(self, doc):
         dictionary = dict()
-        #dictionary['language'] = 'ptg'
-        dictionary['language'] = 'eng'
+        dictionary['language'] = 'ptg'
+        #dictionary['language'] = 'eng'
         dictionary['type'] = ('SDS' , None)
         #dictionary['type'] = ('MDS', 1)  # 0->sin antiredundancia, 1->metodo de ribaldo 2->metodo de ngrams  3-> maximum marginal relevance
         dictionary['corpus'] = 0  # 1  para DUC2004 en caso del ingles, solo para MDS
@@ -230,9 +235,9 @@ class Summarizer(object):
 
         #dictionary['network'] = ('noun', [])
         #dictionary['network'] = ('tfidf', [])
-        dictionary['network'] = ('fastT' , [('limiar', [0.10, 0.15, 0.20, 0.25, 0.3])])
+        #dictionary['network'] = ('fastT' , [('limiar', [0.10, 0.15, 0.20, 0.25, 0.3])])
         #dictionary['network'] = ('s2v', [('limiar', [0.10, 0.15, 0.20, 0.25, 0.3])])
-        #dictionary['network'] = ('gloVe', [('limiar', [0.10, 0.15, 0.20])])
+        dictionary['network'] = ('gloVe', [('limiar', [0.10, 0.15, 0.20])])
         #dictionary['network'] = ('d2v', [False, ('limiar', [0.10, 0.15, 0.20, 0.25, 0.3]), 300])
         #dictionary['network'] = ('gd2v', [('limiar', [0.10, 0.15, 0.20, 0.25, 0.3])])
 

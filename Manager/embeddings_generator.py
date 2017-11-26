@@ -7,7 +7,12 @@ from utils import permutate_data , load_data_from_disk, get_w2v_vector, save_sen
 from utils import save_processed_sentences, save_processed_sentences_v2, get_fast_test_vector_s2v
 from configuration import extras, some_parameters
 import os
-import fasttext
+#import fasttext
+
+from glove import Corpus, Glove
+
+
+
 
 class Vectorization(object):
 
@@ -51,6 +56,8 @@ class Vectorization(object):
 
     def glove_vectorization(self):
         print 'glove vectorization!'
+        obj = GloveVectorization(self.corpus, self.auxiliar_corpus)
+        obj.train()
         return ''
 
 
@@ -254,7 +261,11 @@ class FastText(object):
         if self.use_pre_trained_vectors:
             pass
         else:
+            print "habeeeeer"
             os.system(self.generate_train_command)
+            print self.generate_train_command
+
+            a = input()
 
 
     def get_matrix_fast_text(self):
@@ -376,13 +387,60 @@ class Sent2Vec(object):
         return corpus_matrix
 
 
-class Glove(object):
+'''
+sentences = [['this', 'is', 'the', 'first', 'sentence', 'for', 'word2vec'],
+            ['this', 'is', 'the', 'second', 'sentence'],
+            ['yet', 'another', 'sentence'],
+            ['one', 'more', 'sentence'],
+            ['and', 'the', 'final', 'sentence']]
 
-    def __init__(self, corpus, auxiliar=None):
-        pass
+
+corpus = Corpus()
+corpus.fit(sentences, window=10)
+glove = Glove(no_components=100, learning_rate=0.05)
+glove.fit(corpus.matrix, epochs=30, no_threads=4, verbose=True)
+glove.add_dictionary(corpus.dictionary)
+glove.save('glove.model')
+glove = Glove.load('glove.model')
+vectors = glove.word_vectors
+index = glove.dictionary['and']
+print vectors[index]
+'''
+
+class GloveVectorization(object):
+
+    def __init__(self, corpus, auxiliar=None, use_proccessing=False):
+        self.corpus = corpus
+        self.auxiliar = auxiliar
+        self.proccessing = use_proccessing
+
+        allSentences = []
+        pAllSentences = []
+
+        for i in self.corpus.items():
+            original_sentences =  i[1][0]
+            preprocesed_sentences = i[1][1]
+            allSentences.append(original_sentences)
+            pAllSentences.append(preprocesed_sentences)
+
+
+        if self.auxiliar is not None:
+            for i in self.auxiliar.items():
+                original_sentences = i[1][0]
+                preprocesed_sentences = i[1][1]
+                allSentences.append(original_sentences)
+                pAllSentences.append(preprocesed_sentences)
+
+
+        for i in pAllSentences:
+            print i 
+
 
     def train(self):
-        pass
+        print 'training glove ...'
+        corpus = Corpus()
+        corpus.fit(sentences, window=10)
+
 
     def get_matrix_glove(self):
         pass
