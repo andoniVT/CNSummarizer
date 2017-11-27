@@ -1299,6 +1299,28 @@ def extract_sentences(document_sentences, p_type):
     return sentences
 
 
+def get_word_glove_vector(word, dictionary, vectors):
+    if  word in  dictionary:
+        index = dictionary[word]
+        return vectors[index]
+    else:
+        print "upss!"
+        a = input()
+        return []
+
+
+def get_glove_matrix(sentences, dictionary, vectors):
+    matrix = []
+    for sentence in sentences:
+        word_vectors = []
+        for word in sentence:
+            word_vector = get_word_glove_vector(word, dictionary, vectors)
+            word_vectors.append(word_vector)
+        final_vector = np.mean(word_vectors, axis=0)
+        matrix.append(final_vector)
+    return matrix
+
+
 
 if __name__ == '__main__':
 

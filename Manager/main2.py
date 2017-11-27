@@ -122,18 +122,17 @@ class Summarizer(object):
         '''
         4. Network creation
         5. Network prunning 
+        '''
         
 
         obj = NetworkManager(network_type, mln_type, processed_corpus, vectorized_corpus, inter_edge_mln, limiar_mln, limiar_value, limiar_type)
         complex_networks = obj.create_networks()
-        '''
-
 
 
         '''
         6. Node weighting  7. Node ranking
         6. Node weighting 7. Machine Learning
-        
+        '''
         
 
         manageNodes = NodeManager(complex_networks, network_measures)
@@ -146,7 +145,7 @@ class Summarizer(object):
         else:
             all_documentRankings = manageNodes.ranking()
 
-        '''
+        
 
 
 
@@ -158,12 +157,12 @@ class Summarizer(object):
 
         '''
         8. Summarization
-        
+        '''
         
         
         obj = SummaryGenerator(processed_corpus, complex_networks, all_documentRankings,anti_redundancy_method)
         obj.generate_summaries()
-        '''
+        
 
 
 
@@ -172,6 +171,7 @@ class Summarizer(object):
 
         '''
          9. Validation
+        '''
         
         
         key = choice(all_documentRankings.keys())
@@ -201,7 +201,7 @@ class Summarizer(object):
         obj.validate('results.csv')
         
         deleteFolders(extras['Automatics'])
-        '''
+        
              
 
 
@@ -237,7 +237,7 @@ class Summarizer(object):
         #dictionary['network'] = ('tfidf', [])
         #dictionary['network'] = ('fastT' , [('limiar', [0.10, 0.15, 0.20, 0.25, 0.3])])
         #dictionary['network'] = ('s2v', [('limiar', [0.10, 0.15, 0.20, 0.25, 0.3])])
-        dictionary['network'] = ('gloVe', [('limiar', [0.10, 0.15, 0.20])])
+        dictionary['network'] = ('gloVe', [('limiar', [0.10, 0.15, 0.20, 0.25, 0.3])])
         #dictionary['network'] = ('d2v', [False, ('limiar', [0.10, 0.15, 0.20, 0.25, 0.3]), 300])
         #dictionary['network'] = ('gd2v', [('limiar', [0.10, 0.15, 0.20, 0.25, 0.3])])
 

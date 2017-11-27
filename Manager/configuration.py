@@ -93,3 +93,4 @@ some_parameters['model_v2'] = '../../model2'
 
 some_parameters['ptg_wiki_ft_vec'] = '../../wiki.pt.bin'
 some_parameters['eng_wiki_ft_vec'] = '../../wiki.en.bin'
+some_parameters['glove_model'] = '../../glove.model'

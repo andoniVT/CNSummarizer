@@ -5,11 +5,12 @@ from random import shuffle
 from scipy import spatial
 from utils import permutate_data , load_data_from_disk, get_w2v_vector, save_sentences, save_sentences_v2 ,get_fast_test_vector, get_fast_test_vector_v2
 from utils import save_processed_sentences, save_processed_sentences_v2, get_fast_test_vector_s2v, extract_sentences
+from utils import get_glove_matrix
 from configuration import extras, some_parameters
 import os
 #import fasttext
 
-#from glove import Corpus, Glove
+from glove import Corpus, Glove
 
 
 
@@ -57,8 +58,8 @@ class Vectorization(object):
     def glove_vectorization(self):
         print 'glove vectorization!'
         obj = GloveVectorization(self.corpus, self.auxiliar_corpus)
-        obj.train()
-        return ''
+        #obj.train()
+        return obj.get_matrix_glove()
 
 
     def calculate(self):
@@ -414,15 +415,15 @@ class GloveVectorization(object):
         self.auxiliar = auxiliar
         self.proccessing = use_proccessing
 
-        allSentences = []
-        pAllSentences = []
+        self.allSentences = []
+        self.pAllSentences = []
 
         for i in self.corpus.items():
             original_sentences =  i[1][0]
             preprocesed_sentences = i[1][1]
 
-            allSentences.extend(extract_sentences(original_sentences, False))
-            pAllSentences.extend(extract_sentences(preprocesed_sentences, True))
+            self.allSentences.extend(extract_sentences(original_sentences, False))
+            self.pAllSentences.extend(extract_sentences(preprocesed_sentences, True))
 
 
 
@@ -431,22 +432,46 @@ class GloveVectorization(object):
                 original_sentences = i[1][0]
                 preprocesed_sentences = i[1][1]
 
-                allSentences.extend(extract_sentences(original_sentences, False))
-                pAllSentences.extend(extract_sentences(preprocesed_sentences, True))
-
-
-        for i in pAllSentences:
-            print i
-
-
-
+                self.allSentences.extend(extract_sentences(original_sentences, False))
+                self.pAllSentences.extend(extract_sentences(preprocesed_sentences, True))
 
 
     def train(self):
         print 'training glove ...'
-        #corpus = Corpus()
-        #corpus.fit(sentences, window=10)
+        corpus = Corpus()
+        if self.proccessing:
+            corpus.fit(self.pAllSentences, window=10)
+        else:
+            corpus.fit(self.allSentences, window=10)
 
+        model = Glove(no_components=100, learning_rate=0.05)
+        model.fit(corpus.matrix, epochs=30, no_threads=4, verbose=True)
+        model.add_dictionary(corpus.dictionary)
+        model.save(some_parameters['glove_model']) #
+        
 
     def get_matrix_glove(self):
-        pass
+        model = Glove.load(some_parameters['glove_model'])
+        vectors = model.word_vectors
+        dictionary = model.dictionary
+        corpus_matrix = dict()
+
+        for i in self.corpus.items():
+            doc_name = i[0]
+            original_sentences =  i[1][0]
+            preprocesed_sentences = i[1][1]
+
+            ori_sents = extract_sentences(original_sentences, False)
+            pp_sents = extract_sentences(preprocesed_sentences, True)
+
+
+            if self.proccessing:
+                matrix = get_glove_matrix(pp_sents, dictionary, vectors) 
+            else:
+                matrix = get_glove_matrix(ori_sents, dictionary, vectors)
+
+
+            corpus_matrix[doc_name] = matrix
+
+        return corpus_matrix 
+        
