@@ -1287,6 +1287,17 @@ def get_ml_rankings(doc_names, partitions):
     return dictionary
 
 
+def extract_sentences(document_sentences, p_type):
+    sentences = []
+    if p_type:
+        for i in document_sentences:
+            sentences.append(i[0])
+    else:
+        for i in document_sentences:
+            sentences.append(special_proccesing_sentence(i).split())
+
+    return sentences
+
 
 
 if __name__ == '__main__':

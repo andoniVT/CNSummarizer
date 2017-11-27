@@ -4,12 +4,12 @@ from gensim.models.doc2vec import LabeledSentence
 from random import shuffle
 from scipy import spatial
 from utils import permutate_data , load_data_from_disk, get_w2v_vector, save_sentences, save_sentences_v2 ,get_fast_test_vector, get_fast_test_vector_v2
-from utils import save_processed_sentences, save_processed_sentences_v2, get_fast_test_vector_s2v
+from utils import save_processed_sentences, save_processed_sentences_v2, get_fast_test_vector_s2v, extract_sentences
 from configuration import extras, some_parameters
 import os
 #import fasttext
 
-from glove import Corpus, Glove
+#from glove import Corpus, Glove
 
 
 
@@ -420,26 +420,32 @@ class GloveVectorization(object):
         for i in self.corpus.items():
             original_sentences =  i[1][0]
             preprocesed_sentences = i[1][1]
-            allSentences.append(original_sentences)
-            pAllSentences.append(preprocesed_sentences)
+
+            allSentences.extend(extract_sentences(original_sentences, False))
+            pAllSentences.extend(extract_sentences(preprocesed_sentences, True))
+
 
 
         if self.auxiliar is not None:
             for i in self.auxiliar.items():
                 original_sentences = i[1][0]
                 preprocesed_sentences = i[1][1]
-                allSentences.append(original_sentences)
-                pAllSentences.append(preprocesed_sentences)
+
+                allSentences.extend(extract_sentences(original_sentences, False))
+                pAllSentences.extend(extract_sentences(preprocesed_sentences, True))
 
 
         for i in pAllSentences:
-            print i 
+            print i
+
+
+
 
 
     def train(self):
         print 'training glove ...'
-        corpus = Corpus()
-        corpus.fit(sentences, window=10)
+        #corpus = Corpus()
+        #corpus.fit(sentences, window=10)
 
 
     def get_matrix_glove(self):
