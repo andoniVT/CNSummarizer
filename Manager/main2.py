@@ -235,10 +235,10 @@ class Summarizer(object):
 
         #dictionary['network'] = ('noun', [])
         #dictionary['network'] = ('tfidf', [])
-        #dictionary['network'] = ('fastT' , [('limiar', [0.10, 0.15, 0.20, 0.25, 0.3])])
-        #dictionary['network'] = ('s2v', [('limiar', [0.10, 0.15, 0.20, 0.25, 0.3])])
-        dictionary['network'] = ('gloVe', [('limiar', [0.10, 0.15, 0.20, 0.25, 0.3])])
-        #dictionary['network'] = ('d2v', [False, ('limiar', [0.10, 0.15, 0.20, 0.25, 0.3]), 300])
+        #dictionary['network'] = ('fastT' , [('limiar', [0.15, 0.20, 0.25, 0.3, 0.35,0.40])])
+        dictionary['network'] = ('s2v', [('limiar', [0.15, 0.20, 0.25, 0.3, 0.35,0.40])])
+        #dictionary['network'] = ('gloVe', [('limiar', [0.10, 0.15, 0.20, 0.25, 0.3])])
+        #dictionary['network'] = ('d2v', [False, ('limiar', [0.15, 0.20, 0.25, 0.30, 0.35, 0.4]), 300])
         #dictionary['network'] = ('gd2v', [('limiar', [0.10, 0.15, 0.20, 0.25, 0.3])])
 
 
@@ -247,9 +247,9 @@ class Summarizer(object):
         # dictionary['network'] = ('mln', ['noun', [1.1, 1.3, 1.5], [0.1, 0.15, 0.20]])
 
 
-        dictionary['measures'] = ['dg' , 'pr', 'gaccs']
-        # dictionary['measures'] = ['at' , 'gaccs']
-        #dictionary['measures'] = ['*']
+        #dictionary['measures'] = ['dg' , 'pr', 'gaccs']
+        #dictionary['measures'] = ['at' , 'gaccs']
+        dictionary['measures'] = ['*']
         #dictionary['measures'] = ['gaccs']
         #dictionary['measures'] = ['sp' , 'pr' , 'btw' , 'cc']
 

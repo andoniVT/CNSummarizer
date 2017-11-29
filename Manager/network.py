@@ -125,6 +125,7 @@ class CNetwork(object):
             index1 = i[0]
             index2 = i[1]
             similarity = calculate_similarity(document_vectors[index1], document_vectors[index2], self.network_type)
+            #similarity = calculate_similarity_v2(document_vectors[index1], document_vectors[index2], self.network_type)
             #print similarity ,
 
 
@@ -147,7 +148,7 @@ class CNetwork(object):
                 network = self.remove_redundant_edges_2(network)
         '''
 
-        print 'haberr: ' , len(all_edges) , len(network.get_edgelist())
+        #print 'haberr: ' , len(all_edges) , len(network.get_edgelist())
 
         embeddings = ['d2v' , 'gd2v', 'fastT', 'gloVe', 's2v']
         #if self.network_type=='d2v' or self.network_type=='gd2v':

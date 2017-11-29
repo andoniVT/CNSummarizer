@@ -1324,7 +1324,13 @@ def get_glove_matrix(sentences, dictionary, vectors):
 
 if __name__ == '__main__':
 
-    calculate_similarity_v2([1,2,3], [1,2,33], '')
+
+    sentence1 = 'hola yo me llamo jorge andoni valverde tohalino'
+    sentence2 = 'jorge valverde tiene una mac y se va a brasil'
+    sentence3 = 'a b c'
+
+    print n_gram_sim(sentence1, sentence3)
+
 
 
 
@@ -1353,24 +1359,4 @@ if __name__ == '__main__':
 
     #print c1 | c2
     #print c1 & c2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    #calculate_similarity_v2([1, 2, 3], [1, 2, 33], '')

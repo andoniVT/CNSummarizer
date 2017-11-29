@@ -10,7 +10,7 @@ from configuration import extras, some_parameters
 import os
 #import fasttext
 
-from glove import Corpus, Glove
+#from glove import Corpus, Glove
 
 
 
@@ -218,7 +218,7 @@ class Doc2VecModelGoogleNews(object):
 class FastText(object):
 
     # type='cbow' \ 'skipgram'    proccessing: true->utilizar la parte preprocesada  false-> usar las sentencias originales
-    def __init__(self, corpus, auxiliar=None, type='skipgram', use_proccessing=False, use_pre_trained=False, language='ptg'):
+    def __init__(self, corpus, auxiliar=None, type='cbow', use_proccessing=False, use_pre_trained=True, language='ptg'):
         self.corpus = corpus
         self.auxiliar = auxiliar
         self.type = type
@@ -266,7 +266,7 @@ class FastText(object):
             os.system(self.generate_train_command)
             print self.generate_train_command
 
-            a = input()
+            #a = input()
 
 
     def get_matrix_fast_text(self):
@@ -317,7 +317,7 @@ class FastText(object):
 
 class Sent2Vec(object):
 
-    def __init__(self, corpus, auxiliar=None, use_proccessing=False, use_pre_trained=False, language='ptg'):
+    def __init__(self, corpus, auxiliar=None, use_proccessing=False, use_pre_trained=True, language='ptg'):
         self.corpus = corpus
         self.auxiliar = auxiliar
         self.proccessing = use_proccessing
