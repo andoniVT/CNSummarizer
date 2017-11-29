@@ -317,7 +317,7 @@ class FastText(object):
 
 class Sent2Vec(object):
 
-    def __init__(self, corpus, auxiliar=None, use_proccessing=False, use_pre_trained=True, language='ptg'):
+    def __init__(self, corpus, auxiliar=None, use_proccessing=False, use_pre_trained=False, language='ptg'):
         self.corpus = corpus
         self.auxiliar = auxiliar
         self.proccessing = use_proccessing
