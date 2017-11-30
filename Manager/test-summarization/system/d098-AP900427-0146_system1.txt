@@ -1,6 +1,4 @@
-In honor of the astronomer, Sullivan carried with her into space an eyepiece from the 100-inch telescope at Californias Mount Wilson Observatory that Hubble used to make his pioneering observations.
-Thats great news, replied Discovery commander Loren J. Shriver.
-Oliver said it would be Saturday morning before the telescope is brought out of the safe mode.
-One of the two antennas apparently had swung too far, and the telescope shut down, said Jean Oliver, a Hubble deputy project manager.
-Ill bet its just that way back down there, too, added mission specialist Steven Hawley.
+Those problems, however, were not the immediate concern of shuttle Discoverys astronauts, who prepared for Sundays return to Earth.
+Terry said Hubble is designed with safe modes so it can be the master of its own destiny in case contact with an orbiting communications system is lost for extended periods.
+The Hubble Space Telescope orbited with its big eye open Friday after ground controllers overcame communications problems and lifted its lens cover, but its electronics were shut down due to a malfunction.
 Ground controllers sent a signal commanding the door to lift even though the telescope was in an automatic safe mode, with all motion stopped because of problems in linking its high-speed dish antennas with a relay satellite.

@@ -10,7 +10,7 @@ from configuration import extras, some_parameters
 import os
 #import fasttext
 
-#from glove import Corpus, Glove
+from glove import Corpus, Glove
 
 
 
@@ -58,7 +58,7 @@ class Vectorization(object):
     def glove_vectorization(self):
         print 'glove vectorization!'
         obj = GloveVectorization(self.corpus, self.auxiliar_corpus)
-        #obj.train()
+        obj.train()
         return obj.get_matrix_glove()
 
 
@@ -444,7 +444,7 @@ class GloveVectorization(object):
         else:
             corpus.fit(self.allSentences, window=10)
 
-        model = Glove(no_components=100, learning_rate=0.05)
+        model = Glove(no_components=300, learning_rate=0.05)
         model.fit(corpus.matrix, epochs=30, no_threads=4, verbose=True)
         model.add_dictionary(corpus.dictionary)
         model.save(some_parameters['glove_model']) #
