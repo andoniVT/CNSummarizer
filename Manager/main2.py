@@ -236,8 +236,8 @@ class Summarizer(object):
         #dictionary['network'] = ('noun', [])
         #dictionary['network'] = ('tfidf', [])
         #dictionary['network'] = ('fastT' , [('limiar', [0.15, 0.20, 0.25, 0.3, 0.35,0.40])])
-        dictionary['network'] = ('s2v', [('limiar', [0.15, 0.20, 0.25, 0.3, 0.35,0.40])])
-        #dictionary['network'] = ('gloVe', [('limiar', [0.15, 0.20, 0.25, 0.3, 0.35, 0.4])])
+        #dictionary['network'] = ('s2v', [('limiar', [0.15, 0.20, 0.25, 0.3, 0.35,0.40])])
+        dictionary['network'] = ('gloVe', [('limiar', [0.15, 0.20, 0.25, 0.3, 0.35, 0.4])])
         #dictionary['network'] = ('d2v', [False, ('limiar', [0.15, 0.20, 0.25, 0.30, 0.35, 0.4]), 300])
         #dictionary['network'] = ('gd2v', [('limiar', [0.15, 0.20, 0.25, 0.3, 0.35, 0.4])])
 
