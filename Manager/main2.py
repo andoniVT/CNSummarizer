@@ -214,8 +214,8 @@ class Summarizer(object):
         dictionary = dict()
         #dictionary['language'] = 'ptg'
         dictionary['language'] = 'eng'
-        dictionary['type'] = ('SDS' , None)
-        #dictionary['type'] = ('MDS', 2)  # 0->sin antiredundancia, 1->metodo de ribaldo 2->metodo de ngrams  3-> maximum marginal relevance
+        #dictionary['type'] = ('SDS' , None)
+        dictionary['type'] = ('MDS', 1)  # 0->sin antiredundancia, 1->metodo de ribaldo 2->metodo de ngrams  3-> maximum marginal relevance
         dictionary['corpus'] = 0  # 1  para DUC2004 en caso del ingles, solo para MDS
         #dictionary['size'] = 'w'  ## removeee!
         #dictionary['ml'] = (True, ['method1','naive_bayes' , 10, False])  # metodo ,classifier(naive_bayes/svm/decision_tree/logistic) , kfoldcrossvalidation (10), use traditional measures
@@ -236,8 +236,8 @@ class Summarizer(object):
         #dictionary['network'] = ('noun', [])
         #dictionary['network'] = ('tfidf', [])
         #dictionary['network'] = ('fastT' , [('limiar', [0.15, 0.20, 0.25, 0.3, 0.35,0.40])])
-        #dictionary['network'] = ('s2v', [('limiar', [0.15, 0.20, 0.25, 0.3, 0.35,0.40])])
-        dictionary['network'] = ('gloVe', [('limiar', [0.15, 0.20, 0.25, 0.3, 0.35, 0.4])])
+        dictionary['network'] = ('s2v', [('limiar', [0.15, 0.20, 0.25, 0.3, 0.35,0.40])])
+        #dictionary['network'] = ('gloVe', [('limiar', [0.15, 0.20, 0.25, 0.3, 0.35, 0.4])])
         #dictionary['network'] = ('d2v', [False, ('limiar', [0.15, 0.20, 0.25, 0.30, 0.35, 0.4]), 300])
         #dictionary['network'] = ('gd2v', [('limiar', [0.15, 0.20, 0.25, 0.3, 0.35, 0.4])])
 

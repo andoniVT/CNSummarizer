@@ -1,4 +1,0 @@
-Engineers are able to send commands to the telescope via its secondary antennas but the communications system is not useful for scientific data, which must be transmitted at a high rate of speed.
-The shuttle carries enough supplies to stay in orbit three days beyond Sunday if necessary, NASA said.
-The Hubble Space Telescope was awakened from its self-induced sleep today but it was still without the use of its high-speed antennas, and its science instruments were on hold, unable to begin any observations.
-Shortly after 6 a.m. EDT, controllers at the Goddard Space Flight Center in Greenbelt, Md., completed a series of commands that took the telescope out of its safe mode and then began to run a 12-hour computer program to monitor Hubbles health.

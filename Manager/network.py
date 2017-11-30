@@ -846,7 +846,7 @@ class CNMeasures(object):
         #self.clustering_coefficient()
         self.generalized_accessibility() ##### verify values!!!
         #self.katz_centrality()
-        self.absortion_time()
+        #self.absortion_time() ################
         #self.concentrics([])
         #self.symmetry([])
         #self.accessibility([])

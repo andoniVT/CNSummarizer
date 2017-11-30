@@ -1,5 +1,0 @@
-The unit was replaced with a new one, which tests showed to be fine.
-NASA test director Mike Leinbach said Sunday that the countdown was proceeding smoothly and the shuttle appeared to be in perfect condition.
-A faulty power unit forced the first launch attempt to be scrubbed four minutes before liftoff April 10.
-The six nickel-hydrogen batteries will power Hubble from the time it is disconnected from Discoverys electrical system until its two energy-collecting solar panels take over in space.
-Discovery will aim for an altitude of 380 miles, the highest a shuttle has ever gone, so the telescope can be placed in its proper orbit far above Earths distorting atmosphere.

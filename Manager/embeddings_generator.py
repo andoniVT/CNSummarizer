@@ -10,7 +10,7 @@ from configuration import extras, some_parameters
 import os
 #import fasttext
 
-from glove import Corpus, Glove
+#from glove import Corpus, Glove
 
 
 
